@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="12dp"
+    android:paddingRight="12dp" >
+
+    <RelativeLayout
+        android:id="@+id/km_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/cornered_bg"
+        android:paddingBottom="12dp" >
+
+        <TextView
+            android:id="@+id/km_view_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="You walked 1,3 km today!" />
+
+        <TextView
+            android:id="@+id/km_view_valview"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/km_view_title"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:lineSpacingMultiplier="0.85"
+            android:textColor="@color/green_light"
+            android:textSize="56sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/weekly_title"
+        style="@style/title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/km_container"
+        android:text="WEEK" />
+
+    <RelativeLayout
+        android:id="@+id/weekly_total_container"
+        style="@style/wired_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/weekly_title"
+        android:layout_alignRight="@id/weekly_title"
+        android:layout_below="@id/weekly_title" >
+
+        <TextView
+            android:id="@+id/weekly_total_title"
+            style="@style/sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="TOTAL" />
+
+        <TextView
+            android:id="@+id/weekly_total_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="4,3KM"
+            android:textAllCaps="true"
+            android:textColor="@color/green_light"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/weekly_daily_container"
+        style="@style/wired_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/weekly_title"
+        android:layout_alignRight="@id/weekly_title"
+        android:layout_below="@id/weekly_total_container" >
+
+        <TextView
+            android:id="@+id/weekly_daily_title"
+            style="@style/sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Daily Avg." />
+
+        <TextView
+            android:id="@+id/weekly_daily_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0,3KM"
+            android:textAllCaps="true"
+            android:textColor="@color/green_light"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/summary_title"
+        style="@style/title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weekly_daily_container"
+        android:text="SUMMARY" />
+
+    <RelativeLayout
+        android:id="@+id/summary_total_container"
+        style="@style/wired_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/summary_title"
+        android:layout_alignRight="@id/summary_title"
+        android:layout_below="@id/summary_title" >
+
+        <TextView
+            android:id="@+id/summary_total_title"
+            style="@style/sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="STATUS" />
+
+        <TextView
+            android:id="@+id/summary_total_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:onClick="onServiceStart"
+            android:text="Operational"
+            android:textAllCaps="true"
+            android:textColor="@color/green_light"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

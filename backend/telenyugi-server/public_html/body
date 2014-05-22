@@ -1,0 +1,7 @@
+	<body>
+		<h1>List from <i> {0}  </i></h1>
+		<div id="panel">
+			<div id="map-canvas"/>
+		</div>
+	</body>
+</html>

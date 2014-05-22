@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="title1" parent="android:Widget.Holo.TextView">
+        <item name="android:background">@drawable/cornered_bg</item>
+        <item name="android:layout_marginRight">36dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="wired_container">
+        <item name="android:background">@drawable/cornered_wire_bg</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="sub_title" parent="android:Widget.Holo.TextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">12dp</item>
+    </style>
+
+</resources>

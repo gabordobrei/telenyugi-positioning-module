@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> TeleNyugi - {0} </title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="author" content="Gulyás Máté & Döbrei Gábor"/>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		{1}
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZpLnMLXXvV1tnbai37eVvFlFWCHfJcKU&sensor=true" type="text/javascript"></script>
+		
+		<script type="text/javascript">
+			var southWest = new google.maps.LatLng({2}-0.002, {3}-0.002);
+			var northEast = new google.maps.LatLng({4}, {5});
+			var center = new google.maps.LatLng({6}, {7});
+			
+			var map;
+			var markersArray = [];
+			
+			var MetersOfDay = [{8}, {9}, {10}, {11}, {12}, {13}, {14}, {15}];
+			var week = [new Array(), new Array(), new Array(),
+						new Array(), new Array(), new Array(),
+						new Array(), new Array()];

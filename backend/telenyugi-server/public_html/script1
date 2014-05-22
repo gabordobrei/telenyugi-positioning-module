@@ -1,0 +1,14 @@
+			function initialize() {
+				var mapDiv = document.getElementById('map-canvas');
+				var mapOptions = {
+					zoom: 7,
+					center: center,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				
+				map = new google.maps.Map(mapDiv, mapOptions);
+				
+				var bounds = new google.maps.LatLngBounds(southWest,northEast);
+				map.fitBounds(bounds);
+				
+				var ControlDiv = document.createElement('div');

@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Telenyugi Positioning</string>
+
+    <string name="want_to_start_service">Do you want to start the service?</string>
+    <string name="want_to_stop_service">Do you want to stop the service?</string>
+    
+    <string name="stop_service">Stop the service</string>
+    <string name="start_service">Start the service</string>
+    
+
+</resources>

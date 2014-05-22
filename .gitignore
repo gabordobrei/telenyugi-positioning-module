@@ -1,0 +1,6 @@
+android-client/TelenyugiPositioning/bin/
+android-client/TelenyugiPositioning/gen/
+android-client/ActionBarSherlock/bin/
+android-client/ActionBarSherlock/gen/
+backend/telenyugi-server/bin
+backend/telenyugi-server/db
